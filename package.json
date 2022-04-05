@@ -1,0 +1,14 @@
+{
+  "name": "kuchnia-na-obcasach",
+  "version": "1.0.0",
+  "author": "kbuczynski",
+  "scripts": {
+    "start": "docker-compose up --build",
+    "dev:admin": "npm --prefix ./apps/admin run dev",
+    "dev:api": "npm --prefix ./apps/api run dev",
+    "dev:blog": "npm --prefix ./apps/blog run dev",
+    "migrate:up": "npm --prefix ./migrations run migrate:up",
+    "migrate:down": "npm --prefix ./migrations run migrate:down",
+    "install:all": "sh scripts/install-dependencies.sh"
+  }
+}
